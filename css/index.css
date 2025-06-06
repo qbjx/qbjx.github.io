@@ -1395,6 +1395,16 @@ body {
 input::placeholder {
   color: var(--font-color);
 }
+#web_bg {
+  position: fixed;
+  z-index: -999;
+  width: 100%;
+  height: 100%;
+  background-attachment: local;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 h1,
 h2,
 h3,
@@ -3609,6 +3619,12 @@ figure.highlight pre .javascript .function {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   -webkit-box-align: center;
   -moz-box-align: center;
   -o-box-align: center;
@@ -3677,7 +3693,9 @@ figure.highlight pre .javascript .function {
   font-weight: bold;
 }
 #nav .menus_items {
-  display: inline;
+  display: inline-block;
+  margin: 0 auto;
+  text-align: center;
 }
 #nav .menus_items .menus_item {
   position: relative;
